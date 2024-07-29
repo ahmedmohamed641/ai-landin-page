@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .question-section {
+    background-image: url(/src/assets/ques.background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    filter: brightness(110%);
+  }
+
+  .accordion {
+    background: rgba(41, 40, 40, 0.516);
+    border: rgb(91, 91, 91) 0.05rem solid;
+  }
+
+  .bg-office {
+    @apply bg-stone-950;
+    background-image: url(/src/assets/ques.baackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    filter: brightness(110%);
+  }
+
+  .back {
+    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.051), black);
+  }
+}

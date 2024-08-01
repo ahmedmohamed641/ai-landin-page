@@ -1,3 +1,10 @@
+ // TODO: CHECK ALL THE FILES AND REMOVE UNUSED IMPORTS
+ // TODO: REMOVE FILES THAT ARE NOT USED, SOME FILES ARE FULL OF ERRORS
+ // TODO: MAKE NAVBAR LINKS INTERACTIVE
+ // TODO: SITE IS NOT MOBILE RESPONSIVE
+ 
+ 
+ // todo: remove unsused imports
 import { Button, Typography, Container, ButtonGroup } from "@mui/material";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";

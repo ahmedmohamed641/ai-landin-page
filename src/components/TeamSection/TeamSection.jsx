@@ -1,3 +1,4 @@
+// todo: remove unsused imports
 import { Button, Typography, Container, ButtonGroup } from "@mui/material";
 
 export default function TeamSection() {

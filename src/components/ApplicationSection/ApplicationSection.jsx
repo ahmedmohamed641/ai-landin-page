@@ -1,3 +1,5 @@
+// todo: same thing this has lots of erros, if not used delete the file
+
 import { Typography, Container } from "@mui/material";
 
 export default function () {

@@ -1,10 +1,4 @@
-import {
-  Button,
-  Typography,
-  Container,
-  ButtonGroup,
-  IconButton,
-} from "@mui/material";
+import { Typography, Container, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -128,7 +122,7 @@ export default function Footer() {
 
           <div className="flex w-auto h-fit p-2 pl-6 rounded-lg shadow-sm mb-4 border-2 border-orange-dark">
             <input
-              type="text"
+              type="email"
               placeholder="Your Email"
               className="w-full rounded-lg shadow-sm focus:outline-none focus:border-blue-500 placeholder:italic placeholder:text-zinc-600 bg-transparent flex-grow text-white"
             />

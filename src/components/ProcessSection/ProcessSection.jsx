@@ -1,8 +1,7 @@
-// todo: this has lots of errors, if this is not used delete the file
-import { Button, Typography, Container, ButtonGroup } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 import "./PorcessSection.css";
 
-export default function () {
+export default function ProcessSection() {
   return (
     <section className=" process-section flex justify-between items-center pt-32 pb-20">
       <Container maxWidth="xl" className="text-left  grid grid-cols-2">

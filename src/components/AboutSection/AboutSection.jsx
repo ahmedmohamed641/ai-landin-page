@@ -37,8 +37,6 @@ export default function AboutSection() {
         <img src="/src/assets/robo-com.png" alt="" className="max-w-full" />
       </figure>
 
-      {/* Ask Lukas */}
-
       <section className="pt-20 pb-20 bg-greey  ">
         <Container
           maxWidth="xl"

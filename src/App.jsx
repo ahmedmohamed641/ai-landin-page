@@ -1,11 +1,6 @@
- // TODO: CHECK ALL THE FILES AND REMOVE UNUSED IMPORTS
- // TODO: REMOVE FILES THAT ARE NOT USED, SOME FILES ARE FULL OF ERRORS
- // TODO: MAKE NAVBAR LINKS INTERACTIVE
- // TODO: SITE IS NOT MOBILE RESPONSIVE
- 
- 
- // todo: remove unsused imports
-import { Button, Typography, Container, ButtonGroup } from "@mui/material";
+// TODO: MOBILE RESPONSIVE
+import React, { useRef } from "react";
+import { Container } from "@mui/material";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
@@ -20,11 +15,13 @@ import BlogsSection from "./components/BlogsSection/BlogsSection";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+  const searchInputRef = useRef(null);
+
   return (
     <>
       <Container className="landing-page" maxWidth="xl">
-        <Navbar />
-        <HeroSection />
+        <Navbar searchInputRef={searchInputRef} />
+        <HeroSection ref={searchInputRef} />
       </Container>
 
       <AboutSection />

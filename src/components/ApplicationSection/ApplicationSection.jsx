@@ -1,8 +1,6 @@
-// todo: same thing this has lots of erros, if not used delete the file
-
 import { Typography, Container } from "@mui/material";
 
-export default function () {
+export default function ApplicationSection() {
   return (
     <section className="pt-20 pb-20  bg-gray-dark">
       <Container maxWidth="xl" className="flex justify-center gap-6 flex-col">

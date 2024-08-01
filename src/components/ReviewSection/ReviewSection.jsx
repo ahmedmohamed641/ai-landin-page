@@ -1,11 +1,10 @@
-// todo: remove unsused imports
-import { Button, Typography, Container, ButtonGroup } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 
 import Rating from "@mui/material/Rating";
 
 export default function ReviewSection() {
   return (
-    <section className="pt-20 pb-48  bg-gray-dark">
+    <section className="pt-28 pb-48  bg-gray-dark">
       <Container maxWidth="xl" className="flex justify-center gap-6 flex-col">
         <span className="flex justify-center">
           <Typography

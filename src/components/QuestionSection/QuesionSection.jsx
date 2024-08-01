@@ -3,7 +3,6 @@ import {
   Typography,
   Container,
   Accordion,
-  AccordionActions,
   AccordionDetails,
   AccordionSummary,
 } from "@mui/material";

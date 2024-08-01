@@ -1,8 +1,9 @@
+import React, { forwardRef } from "react";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import CircleIcon from "@mui/icons-material/Circle";
 import { Typography } from "@mui/material";
 
-export default function HeroSection() {
+const HeroSection = forwardRef((props, ref) => {
   return (
     <main className="flex justify-between items-center">
       <div className="text-left">
@@ -25,7 +26,8 @@ export default function HeroSection() {
             <input
               type="text"
               placeholder="what shall I create for you"
-              className=" w-96 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 placeholder:italic placeholder:text-zinc-600"
+              className=" w-96 rounded-lg shadow-sm focus:outline-none placeholder:italic placeholder:text-zinc-600"
+              ref={ref}
             />
             <span className="text-white bg-orange rounded-md p-1 pl-2 pr-2">
               <NorthEastIcon />
@@ -78,4 +80,6 @@ export default function HeroSection() {
       </div>
     </main>
   );
-}
+});
+
+export default HeroSection;

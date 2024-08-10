@@ -5,7 +5,10 @@ import { Typography } from "@mui/material";
 
 const HeroSection = forwardRef((props, ref) => {
   return (
-    <main className="flex flex-col lg:flex-row justify-center lg:justify-between px-4 lg:px-16 py-6">
+    <main
+      className="flex flex-col lg:flex-row justify-center lg:justify-between px-4 lg:px-16 py-6 "
+      id="home"
+    >
       <div className="text-left">
         <Typography
           variant="caption"

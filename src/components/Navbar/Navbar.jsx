@@ -47,7 +47,7 @@ export default function Navbar({ searchInputRef }) {
         } fixed inset-0 z-50 flex-col items-center justify-center xs:bg-black md:bg-transparent xs:bg-opacity-80 sm:relative sm:flex sm:flex-row sm:justify-end sm:space-x-4 lg:space-x-8`}
       >
         <ButtonGroup className="flex flex-col items-center space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 lg:space-x-8">
-          <a href="#digital-art-marketplace" onClick={closeMenu}>
+          <a href="#home" onClick={closeMenu}>
             <Button
               variant="text"
               className="capitalize text-zinc-300 font-thin"

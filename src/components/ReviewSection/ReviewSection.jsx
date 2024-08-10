@@ -15,13 +15,13 @@ export default function ReviewSection() {
           </Typography>
         </span>
 
-        <section className="flex gap-10 justify-start mt-20">
-          <div className=" card flex flex-col bg-greey  p-10  pt-8 relative rounded-2xl shadow-2xl shadow-black text-left">
-            <figure className="absolute -top-10 ">
-              <img src="/src/assets/review1.webp.png" alt="" />
+        <section className="grid md:grid-cols-1 lg:grid-cols-3 xs:gap-16  md:gap-16 lg:gap-10 justify-start mt-20">
+          <div className="  card flex flex-col bg-greey  pb-10 p-4   pt-8  relative rounded-2xl shadow-2xl shadow-black text-left">
+            <figure className="absolute -top-10 -z-1">
+              <img src="/src/assets/review1.webp.png" alt="" className="" />
             </figure>
-            <span className="flex flex-col ml-auto pl-20 mr-auto gap-2">
-              <Typography variant="h7" className="text-white ml-1">
+            <span className="flex flex-col ml-auto  xs:ml-40 md:ml-auto lg:pl-28  xl:ml-auto  xl:pl-20 mr-auto gap-2 text-nowrap">
+              <Typography variant="h7" className=" -z-0 text-white ml-1">
                 LARRA{" "}
                 <span className="text-orange-dark font-light">- MANAGER</span>
               </Typography>
@@ -32,20 +32,20 @@ export default function ReviewSection() {
                 className="text-orange"
               />
             </span>
-            <Typography variant="h6" className="text-zinc-400 mt-10">
+            <Typography className="text-zinc-400 xs:text-sm md:text-base md:line-clamp-10 xl:text-lg text-wrap mt-10">
               Natoque penatibus et magnis dis. Massa <br /> eget egestas purus
               viverra accumsan in <br /> Sagittis aliquam malesuada bibendum
               arcu vitae. Massa id neque vestibulum blandit cursus.
             </Typography>
           </div>
-          <div className=" card flex flex-col bg-greey  p-10  pt-8 relative rounded-2xl shadow-2xl shadow-black text-left">
-            <figure className="absolute -top-10 ">
-              <img src="/src/assets/review2.webp.png" alt="" />
+          <div className="  card flex flex-col bg-greey  pb-10 p-4   pt-8  relative rounded-2xl shadow-2xl shadow-black text-left">
+            <figure className="absolute -top-10 -z-1">
+              <img src="/src/assets/review2.webp.png" alt="" className="" />
             </figure>
-            <span className="flex flex-col ml-auto pl-20 mr-auto gap-2">
-              <Typography variant="h7" className="text-white ml-1">
-                ROBERT{" "}
-                <span className="text-orange-dark font-light">- DESIGNER</span>
+            <span className="flex flex-col ml-auto  xs:ml-40 md:ml-auto lg:pl-28  xl:ml-auto  xl:pl-20 mr-auto gap-2 text-nowrap">
+              <Typography variant="h7" className=" -z-0 text-white ml-1">
+                DAVID
+                <span className="text-orange-dark font-light">- DEVELOPER</span>
               </Typography>
               <Rating
                 name="read-only"
@@ -54,19 +54,19 @@ export default function ReviewSection() {
                 className="text-orange"
               />
             </span>
-            <Typography variant="h6" className="text-zinc-400 mt-10">
-              Sagittis aliquam malesuada bibendum arcu <br /> vitae. Massa id
-              neque aliquam vestibulum <br /> blandit cursus. Natoque penatibus
-              et magnis dis. Massa eget egestas purus viverra accumsan in nisl.
+            <Typography className="text-zinc-400 xs:text-sm md:text-base md:line-clamp-10 xl:text-lg text-wrap mt-10">
+              Natoque penatibus et magnis dis. Massa <br /> eget egestas purus
+              viverra accumsan in <br /> Sagittis aliquam malesuada bibendum
+              arcu vitae. Massa id neque vestibulum blandit cursus.
             </Typography>
           </div>
-          <div className=" card flex flex-col bg-greey  p-6  pt-8 relative rounded-2xl shadow-2xl shadow-black text-left">
-            <figure className="absolute -top-10 ">
-              <img src="/src/assets/review3.webp.png" alt="" />
+          <div className="  card flex flex-col bg-greey  pb-10 p-4   pt-8  relative rounded-2xl shadow-2xl shadow-black text-left">
+            <figure className="absolute -top-10 -z-1">
+              <img src="/src/assets/review3.webp.png" alt="" className="" />
             </figure>
-            <span className="flex flex-col ml-auto pl-24 mr-auto gap-2">
-              <Typography variant="h7" className="text-white ml-1">
-                JASMINE{" "}
+            <span className="flex flex-col ml-auto  xs:ml-40 md:ml-auto lg:pl-28  xl:ml-auto  xl:pl-20 mr-auto gap-2 text-nowrap">
+              <Typography variant="h7" className=" -z-0 text-white ml-1">
+                MARY
                 <span className="text-orange-dark font-light">- DESIGNER</span>
               </Typography>
               <Rating
@@ -76,10 +76,10 @@ export default function ReviewSection() {
                 className="text-orange"
               />
             </span>
-            <Typography variant="h6" className="text-zinc-400 mt-10">
-              Massa id neque aliquam vestibulum blandit <br /> cursus. Natoque
-              penatibus et magnis dis. <br /> Massa eget egestas purus viverra
-              accumsan in nisl. Sagittis aliquam malesuada bibendum arcu vitae.
+            <Typography className="text-zinc-400 xs:text-sm md:text-base md:line-clamp-10 xl:text-lg text-wrap mt-10">
+              Natoque penatibus et magnis dis. Massa <br /> eget egestas purus
+              viverra accumsan in <br /> Sagittis aliquam malesuada bibendum
+              arcu vitae. Massa id neque vestibulum blandit cursus.
             </Typography>
           </div>
         </section>

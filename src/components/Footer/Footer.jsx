@@ -10,7 +10,10 @@ import SendIcon from "@mui/icons-material/Send";
 
 export default function Footer() {
   return (
-    <Container maxWidth="xl" className="grid grid-cols-4 bg-graay pt-20 pb-20">
+    <Container
+      maxWidth="xl"
+      className="grid lg:grid-cols-4 md:grid-cols-2 bg-graay pt-20 pb-20"
+    >
       <section className="flex flex-col gap-4">
         <figure>
           <img src="/src/assets/logo-footer.png" alt="" />
@@ -36,7 +39,7 @@ export default function Footer() {
         </ul>
       </section>
 
-      <section className="ml-20">
+      <section className=" xs:mt-10 md:mt-0 lg:ml-20 md:test-left">
         <Typography variant="h5" className="text-orange text-left font-bold">
           Contact
         </Typography>
@@ -69,7 +72,7 @@ export default function Footer() {
         </ul>
       </section>
 
-      <section className="ml-20">
+      <section className="xs:mt-10 md:mt-10 lg:ml-20  lg:mt-0">
         <Typography variant="h5" className="text-orange text-left font-bold">
           Links
         </Typography>
@@ -107,7 +110,7 @@ export default function Footer() {
         </ul>
       </section>
 
-      <section>
+      <section className=" xs:mt-10  md:mt-10 lg:mt-0">
         <Typography variant="h5" className="text-orange text-left font-bold">
           Newsletter
         </Typography>

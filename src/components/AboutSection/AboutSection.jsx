@@ -3,7 +3,7 @@ import { Button, Typography, Container } from "@mui/material";
 export default function AboutSection() {
   return (
     <>
-      <div className="mt-20 bg-zinc-900">
+      <div className="md:mt-20 bg-zinc-900">
         <img src="/src/assets/Section.png" alt="" className="max-w-full" />
       </div>
 
@@ -14,16 +14,16 @@ export default function AboutSection() {
         >
           Who Are We
         </Typography>
-
-        <Typography
-          variant="h4"
-          className="text-initial text-white capitalize mt-6 font-bold"
-        >
-          don't heistate to pick a new technology
-          <span className="text-orange ml-3">Ai That </span>will <br /> improve
-          your business growth and think smart and make <br /> big change get
-          <span className="text-orange ml-3">Big Change</span>
-        </Typography>
+        <Container maxWidth="xl">
+          <Typography className=" text-white capitalize mt-6 font-bold xs:text-2xl md:text-3xl lg:text-4xl ">
+            don't heistate to pick a new technology
+            <span className="text-orange ml-3">
+              Ai That <br />{" "}
+            </span>
+            improve your business growth and think smart and make big change get
+            <span className="text-orange ml-3">Big Change</span>
+          </Typography>
+        </Container>
 
         <figure className="mt-20 mb-8  flex justify-center">
           <img src="/src/assets/sign.png" alt="" className="max-w-full" />
@@ -40,11 +40,11 @@ export default function AboutSection() {
       <section className="pt-20 pb-20 bg-greey  ">
         <Container
           maxWidth="xl"
-          className=" grid grid-cols-1 md:grid-cols-3 gap-32 w-full "
+          className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xs:gap-12 md:gap-32 w-full "
         >
           {/*  button & chip image section */}
 
-          <section>
+          <section id="story">
             <Typography
               variant="caption"
               className="text-orange-dark bg-button-grey w-fit p-2 pl-3 pr-3  font-normal rounded uppercase "
@@ -55,15 +55,15 @@ export default function AboutSection() {
               <img
                 src="/src/assets/chip.webp.png"
                 alt=""
-                className="max-w-full"
+                className=" h-auto xs:w-56 md:max-w-md lg:max-w-full"
               />
             </figure>
           </section>
 
           {/* card section */}
 
-          <section className="flex gap-10 justify-center flex-col">
-            <div className=" card bg-gray w-80 p-8 pl-12 pr-12 relative  rounded">
+          <section className="flex gap-10 justify-center xs:items-center flex-col">
+            <div className=" card bg-gray w-80 p-8 pl-12 pr-12 relative rounded">
               <span className="absolute -top-8 ">
                 <Typography
                   variant="h3"
@@ -112,15 +112,12 @@ export default function AboutSection() {
 
           {/* text content section */}
 
-          <section className="flex gap-16 justify-center flex-col text-left mt-0 pt-0">
-            <Typography
-              variant="h4"
-              className="text-initial text-white capitalize font-bold"
-            >
+          <section className="flex gap-16 justify-center  md:items-left xs:items-center   flex-col xs:text-center md:text-left mt-0 pt-0">
+            <Typography className="text-white capitalize mt-6 font-bold xs:text-2xl md:text-3xl lg:text-4xl">
               our team makes your
               <span className="text-orange ml-3">Life Easier </span>
             </Typography>
-            <Typography variant="h7" className="text-zinc-400 text-">
+            <Typography className="text-zinc-400 xs:text-sm md:text-base text-wrap">
               Morbi pulvinar tempor lectus in feugiat. Quisque ullamcorper
               dapibus eros, sit amet congue mi laoreet id . Maecenas pulvinar
               diam justo, id eleifend nulla viverra at. Vestibulum euismod
@@ -129,7 +126,7 @@ export default function AboutSection() {
               efficitur pulvinar mi rhoncus id.
             </Typography>
             <Button
-              className="bg-orange text-white capitalize w-40 h-auto text-center "
+              className="bg-orange text-white capitalize w-40 h-auto text-center"
               variant="contained"
             >
               Discover More

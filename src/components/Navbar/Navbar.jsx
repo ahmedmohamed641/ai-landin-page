@@ -1,61 +1,103 @@
-import React from "react";
-import { Button, ButtonGroup } from "@mui/material";
+import React, { useState } from "react";
+import { Button, ButtonGroup, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Navbar({ searchInputRef }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleSearchClick = () => {
     if (searchInputRef.current) {
       searchInputRef.current.focus();
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className="flex justify-between pt-6 mb-28">
-      <span>
-        <img src="/src/assets/logo.svg.png" alt="" />
+    <nav className="flex justify-between items-center pt-6 sm:mb-16 md:mb-20 lg:mb-28 px-4 lg:px-16">
+      <span className="flex-shrink-0">
+        <img
+          src="/src/assets/logo.svg.png"
+          alt="Logo"
+          className="w-24 lg:w-32"
+        />
       </span>
 
-      <ButtonGroup>
-        <a href="#" className="hover:bg-gray pl-2">
-          <Button variant="text" className="capitalize text-zinc-300 font-thin">
-            Home <span className="ml-1">+</span>
-          </Button>
-        </a>
-        <a href="#" className="hover:bg-gray pl-2">
-          <Button variant="text" className="capitalize text-zinc-300 font-thin">
-            Services <span className="ml-1">+</span>
-          </Button>
-        </a>
-        <a href="#" className="hover:bg-gray pl-2">
-          <Button variant="text" className="capitalize text-zinc-300 font-thin">
-            Innerpage <span className="ml-1">+</span>
-          </Button>
-        </a>
-        <a href="#" className="hover:bg-gray pl-2">
-          <Button variant="text" className="capitalize text-zinc-300 font-thin">
-            Articles <span className="ml-1">+</span>
-          </Button>
-        </a>
-        <a href="#" className="hover:bg-gray pl-2">
-          <Button variant="text" className="capitalize text-zinc-300 font-thin">
-            Store <span className="ml-1">+</span>
-          </Button>
-        </a>
-      </ButtonGroup>
+      <div className="sm:hidden">
+        <IconButton onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <CloseIcon className="text-white" />
+          ) : (
+            <MenuIcon className="text-white" />
+          )}
+        </IconButton>
+      </div>
 
-      <ButtonGroup className="gap-3">
+      <div
+        className={`${
+          isMenuOpen ? "flex" : "hidden"
+        } fixed inset-0 z-50 flex-col items-center justify-center xs:bg-black md:bg-transparent xs:bg-opacity-80 sm:relative sm:flex sm:flex-row sm:justify-end sm:space-x-4 lg:space-x-8`}
+      >
+        <ButtonGroup className="flex flex-col items-center space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 lg:space-x-8">
+          <a href="#digital-art-marketplace" onClick={closeMenu}>
+            <Button
+              variant="text"
+              className="capitalize text-zinc-300 font-thin"
+            >
+              Home
+            </Button>
+          </a>
+          <a href="#digital-art-marketplace" onClick={closeMenu}>
+            <Button
+              variant="text"
+              className="capitalize text-zinc-300 font-thin"
+            >
+              Questions
+            </Button>
+          </a>
+          <a href="#blogs" onClick={closeMenu}>
+            <Button
+              variant="text"
+              className="capitalize text-zinc-300 font-thin"
+            >
+              blogs
+            </Button>
+          </a>
+
+          <a href="#team" onClick={closeMenu}>
+            <Button
+              variant="text"
+              className="capitalize text-zinc-300 font-thin"
+            >
+              Team
+            </Button>
+          </a>
+          <a href="#story" onClick={closeMenu}>
+            <Button
+              variant="text"
+              className="capitalize text-zinc-300 font-thin"
+            >
+              story
+            </Button>
+          </a>
+        </ButtonGroup>
+      </div>
+
+      <ButtonGroup className="hidden sm:flex flex-col items-end space-y-2 mt-4 sm:mt-0 sm:space-y-0 sm:flex-row sm:space-x-4 lg:space-x-8">
         <Button
           variant="text"
           className="text-zinc-300"
           onClick={handleSearchClick}
         >
           <SearchIcon />
-        </Button>
-        <Button
-          variant="outlined"
-          className="capitalize rounded border-zinc-400 text-zinc-300 "
-        >
-          try for free
         </Button>
       </ButtonGroup>
     </nav>

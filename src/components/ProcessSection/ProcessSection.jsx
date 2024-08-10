@@ -14,48 +14,52 @@ export default function ProcessSection() {
               Our process
             </Typography>
 
-            <Typography
-              variant="h3"
-              className=" text-white capitalize font-bold mb-3"
-            >
-              Artificial Intelligence is the <br /> power
+            <Typography className=" text-white capitalize mt-6 font-bold xs:text-2xl md:text-3xl lg:text-4xl">
+              Artificial Intelligence is the power
               <span className="text-orange ml-3">of the future </span>
             </Typography>
           </section>
 
-          <section className="flex  gap-20 mt-14">
-            <div className=" card  w-96  relative  rounded">
+          <section className="xs:gap-4 grid xs:grid-cols-1  md:grid-cols-2  md:flex   gap-20 mt-14">
+            <div className=" card  xs:w-80 md:w-96   relative  rounded">
               <figure className=" flex justify-left mb-4 ">
                 <img src="/src/assets/cog.png" alt="" className="max-w-full" />
               </figure>
 
-              <Typography variant="h5" className="text-white text-">
+              <Typography className="text-white capitalize  xs:text-xl md:text-2xl lg:text-3xl">
                 Collecting Data Base
               </Typography>
 
-              <Typography variant="h7" className="text-zinc-400 text-">
+              <Typography className="text-zinc-400 xs:text-sm md:text-base md:line-clamp-3 text-wrap ">
                 Lacus sed viverra tellus in hac habitasse plate
               </Typography>
             </div>
 
-            <div className=" card w-96   relative  rounded">
+            <div className=" card  xs:w-80 md:w-96   relative  rounded">
               <figure className=" flex justify-left mb-4 ">
                 <img src="/src/assets/leaf.png" alt="" className="max-w-full" />
               </figure>
 
-              <Typography variant="h5" className="text-white text-">
+              <Typography className="text-white capitalize  xs:text-xl md:text-2xl lg:text-3xl">
                 Collecting Data Base
               </Typography>
 
-              <Typography variant="h7" className="text-zinc-400 text-">
+              <Typography
+                variant="h7"
+                className="text-zinc-400 xs:text-sm md:text-base md:line-clamp-3 text-wrap "
+              >
                 Lacus sed viverra tellus in hac habitasse plate
               </Typography>
             </div>
           </section>
         </section>
 
-        <figure className=" flex justify-center">
-          <img src="/src/assets/phone.png" alt="" className="max-w-full" />
+        <figure className=" xs:w-10 md:flex w-fit">
+          <img
+            src="/src/assets/phone.png"
+            alt=""
+            className=" xs:absolute  xs:-z-10 xs:bottom-72 xs:-right-0 md:absolute lg:relative md:bottom-7 md:-right-0 h-auto xs:max-w-60  md:max-w-md  lg:max-w-lg  xl:max-w-2xl"
+          />
         </figure>
       </Container>
     </section>
